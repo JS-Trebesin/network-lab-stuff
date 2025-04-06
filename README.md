@@ -29,6 +29,7 @@ echo "Top secret stuff" | sudo tee /var/www/html/secret/passwords.txt
 ```bash
 sudo nano /etc/apache2/apache2.conf
 ```
+```
 Indexes needs to be included
 
 <Directory /var/www/>
@@ -36,7 +37,7 @@ Indexes needs to be included
         AllowOverride None
         Require all granted
 </Directory>
-
+```
 ```bash
 sudo systemctl reload apache2
 ```
